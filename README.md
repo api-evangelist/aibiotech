@@ -64,5 +64,25 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aibiotech is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/aibiotech
+AiBiotech (AIBioTech, American International Biotechnology) was a Richmond, Virginia contract research
+organization and CLIA/CAP clinical laboratory — molecular biology, immunochemistry, protein expression,
+peptide chemistry, bioanalytical mass spectrometry, microbiology, BSL3 virology, genetic identity and
+forensic DNA analysis for pharmaceutical, biotech, academic and government clients.
+
+**No API surface.** This was a wet-lab services business, not a software company, and it never published
+an API, SDK, webhook surface or developer portal. The enrichment pass on 2026-09-14 found:
+
+- `aibiotech.com` and `www.aibiotech.com` are a **HugeDomains for-sale parking lander**. Every path
+  probed — including `/openapi.json`, `/llms.txt` and `/.well-known/agent-card.json` — returns HTTP 200
+  with the identical sale page, the classic soft-200 catch-all. HTTPS on the domain does not answer.
+- The last archived snapshot of a real company site at that domain dates to **2017**.
+- No GitHub organization (`api.github.com/orgs/aibiotech` → 404).
+- Laboratory directories now list the operation under **Granger Genetics** (Richmond, VA), whose own
+  site makes no first-party claim to the AIBioTech brand — so no successor host is wired into this
+  record.
+
+Because the company's registrable domain is parked, **no `Website` pointer is wired** and no
+`WellKnown` / `SecurityTxt` / `AgentCard` pointer is emitted. The probe itself is recorded in
+[`well-known/aibiotech-well-known.yml`](well-known/aibiotech-well-known.yml) as evidence of absence.
+
+Harvest source: <https://equityzen.com/company/aibiotech>

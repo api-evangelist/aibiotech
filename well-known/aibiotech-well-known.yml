@@ -1,0 +1,130 @@
+generated: '2026-09-14'
+method: probed
+source: https://aibiotech.com/
+name: AiBiotech well-known discovery probe
+description: >-
+  Probe of the RFC 8615 /.well-known/ namespace plus the common contract-discovery paths on
+  the AiBiotech registrable domain and its www host. NO DOCUMENT WAS FOUND. aibiotech.com no
+  longer resolves to the company: it is a HugeDomains for-sale parking lander that answers
+  HTTP 200 with the same HTML sale page for EVERY path, which is the classic soft-200
+  catch-all false positive. The 200s below are therefore recorded as MISSES, and no
+  WellKnown, SecurityTxt or AgentCard pointer is emitted from this file.
+notes:
+  - HTTPS on aibiotech.com and www.aibiotech.com times out (no TLS service); only plain HTTP answers.
+  - Every HTTP request 302s to https://www.hugedomains.com/domain_profile.cfm?d=aibiotech.com
+  - The only path whose body is NOT the sale lander is /robots.txt, served by the parking host.
+hosts:
+  - host: aibiotech.com
+    note: >-
+      Registrable domain. Parked and listed for sale on HugeDomains; title of every response is
+      "AiBiotech.com is for sale | HugeDomains". Not under company control.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander, not an RFC 9116 document
+      - path: /.well-known/openid-configuration
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander, not JSON metadata
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander, not JSON metadata
+      - path: /.well-known/api-catalog
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander, not an RFC 9727 catalog
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander, not JSON
+      - path: /.well-known/agent-card.json
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander; rejected per the A2A object-shape check
+      - path: /.well-known/agent.json
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander; rejected per the A2A object-shape check
+      - path: /openapi.json
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander, does not parse as OpenAPI
+      - path: /llms.txt
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander, not llms.txt
+      - path: /robots.txt
+        status: 200
+        file: null
+        result: miss
+        note: "served by the parking host: 'User-agent: * Disallow:' — no site of the company's behind it"
+  - host: www.aibiotech.com
+    note: Same parked A records as the apex; identical HugeDomains lander on every path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander
+      - path: /.well-known/openid-configuration
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander
+      - path: /.well-known/api-catalog
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander
+      - path: /.well-known/agent-card.json
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander
+      - path: /.well-known/agent.json
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander
+      - path: /openapi.json
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander
+      - path: /llms.txt
+        status: 200
+        file: null
+        result: miss
+        note: soft-200 — HTML parking lander
+      - path: /robots.txt
+        status: 200
+        file: null
+        result: miss
+        note: served by the parking host
+summary:
+  hosts_probed: 2
+  paths_probed: 20
+  documents_found: 0
+  soft_200_catch_all: true
+  pointer_emitted: false
