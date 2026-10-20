@@ -1,0 +1,53 @@
+edges:
+- partner_name: PubChem (data source)
+  partner: null
+  partner_match: register-name
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://pubchem.ncbi.nlm.nih.gov/source/AIBioTech%2C%20LLC
+  category: PubChem chemical data depositor
+  chemistry_materials:
+    register: pubchem
+    listings:
+    - source: AIBioTech, LLC
+      categories:
+      - Legacy Depositors
+      - Chemical Vendors
+      legacy: true
+      live_substances: '5'
+      live_bioassays: null
+  contract_reference:
+    register: PubChem data sources (pubchem.ncbi.nlm.nih.gov/rest/pug/sourcetable/all/JSON)
+    standard: PubChem depositor
+    spec_file: null
+    role: pubchem-depositor
+    registered_name: AIBioTech, LLC
+    register_id: AIBioTech, LLC
+    matched_domain: null
+    matched_by: register-name
+    domain_source: null
+    source_categories:
+    - Chemical Vendors
+    - Legacy Depositors
+    legacy_depositor: true
+    registered_country: United States
+    last_updated: 2015/09/10
+    signal_note: 'participation only: a depositor listing; ''Legacy Depositors'' = no longer depositing (flagged);
+      substance / bioassay counts are context, never counted'
+    detected_by: sweep-chemistry-materials.py
+    detected: '2026-10-20'
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  detected_by: sweep-chemistry-materials.py
+  first_seen: '2026-10-20'
+generated: '2026-10-20'
+method: searched
+source:
+- https://pubchem.ncbi.nlm.nih.gov/rest/pug/sourcetable/all/JSON
+- https://providers.optimade.org/providers.json
+checked:
+- https://providers.optimade.org/providers.json
+- https://pubchem.ncbi.nlm.nih.gov/rest/pug/sourcetable/all/JSON
