@@ -1,4 +1,4 @@
-# Aibiotech
+# AiBiotech
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,25 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AiBiotech (AIBioTech, American International Biotechnology) was a Richmond, Virginia contract research
-organization and CLIA/CAP clinical laboratory — molecular biology, immunochemistry, protein expression,
-peptide chemistry, bioanalytical mass spectrometry, microbiology, BSL3 virology, genetic identity and
-forensic DNA analysis for pharmaceutical, biotech, academic and government clients.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-**No API surface.** This was a wet-lab services business, not a software company, and it never published
-an API, SDK, webhook surface or developer portal. The enrichment pass on 2026-09-14 found:
+AiBiotech (AIBioTech, American International Biotechnology) was a Richmond, Virginia contract research organization and CLIA/CAP clinical laboratory offering molecular biology, immunochemistry, protein expression, peptide chemistry, bioanalytical mass spectrometry, microbiology, BSL3 virology, genetic identity and forensic DNA analysis to pharmaceutical, biotech, academic and government clients. It was a wet-lab services business, not a software company, and never published an API, SDK, webhook surface or developer portal. Its domain aibiotech.com is now a HugeDomains for-sale parking lander answering HTTP 200 with the same sale page on every path; the last archived snapshot of a real company site dates to 2017. Laboratory directories list the operation under Granger Genetics, which makes no first-party claim to the brand, so no successor host is wired here.
 
-- `aibiotech.com` and `www.aibiotech.com` are a **HugeDomains for-sale parking lander**. Every path
-  probed — including `/openapi.json`, `/llms.txt` and `/.well-known/agent-card.json` — returns HTTP 200
-  with the identical sale page, the classic soft-200 catch-all. HTTPS on the domain does not answer.
-- The last archived snapshot of a real company site at that domain dates to **2017**.
-- No GitHub organization (`api.github.com/orgs/aibiotech` → 404).
-- Laboratory directories now list the operation under **Granger Genetics** (Richmond, VA), whose own
-  site makes no first-party claim to the AIBioTech brand — so no successor host is wired into this
-  record.
+**Areas:** Company · Biotechnology · Life Sciences · Contract Research · Clinical Laboratory · Diagnostics · Genomics · Defunct
 
-Because the company's registrable domain is parked, **no `Website` pointer is wired** and no
-`WellKnown` / `SecurityTxt` / `AgentCard` pointer is emitted. The probe itself is recorded in
-[`well-known/aibiotech-well-known.yml`](well-known/aibiotech-well-known.yml) as evidence of absence.
+## AiBiotech on APIs.io (historical record)
 
-Harvest source: <https://equityzen.com/company/aibiotech>
+Everything profiled for AiBiotech is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aibiotech/](https://apis.io/providers/aibiotech/)** — or go straight to one of the APIs or properties below.
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AiBiotech: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aibiotech/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
